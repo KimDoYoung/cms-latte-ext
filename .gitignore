@@ -24,6 +24,8 @@ $RECYCLE.BIN/
 
 ### Java ###
 *.class
+target/
+reports/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

@@ -1,13 +1,14 @@
 package kr.dcos.cmslatte.external.db;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import kr.dcos.cmslatte.exception.CmsLatteFunctionException;
-import kr.dcos.cmslatte.field.MatrixField;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import kr.dcos.cmslatte.exception.CmsLatteFunctionException;
+import kr.dcos.cmslatte.field.MatrixField;
 
 public class MySqlTest {
 

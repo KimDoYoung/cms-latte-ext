@@ -11,7 +11,7 @@
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 		<project.artifactId>cms-latte-ext</project.artifactId>
 		<project.groupId>kr.co.kalpa.cms</project.groupId>
-		<project.version>0.0.1-SNAPSHOT</project.version>
+		<project.version>1.0.0-SNAPSHOT</project.version>
 	</properties>
 	
 <!-- 	<repositories> -->
@@ -22,18 +22,24 @@
 <!--      		<snapshots><enabled>true</enabled></snapshots> -->
 <!--    		</repository> -->
 <!--  	</repositories> -->
-
+	<repositories>
+	 	<repository>
+		    <id>mesir-repo</id>
+		    <url>http://mesir.googlecode.com/svn/trunk/mavenrepo</url>
+		</repository>
+	</repositories>
+	
  	<dependencies>
 		<dependency>
 		  <groupId>kr.co.kalpa.cms</groupId>
 		  <artifactId>cms-latte</artifactId>
-		  <version>0.0.1</version>
+		  <version>1.0.0</version>
 		</dependency> 
 		
 		<dependency>
 			<groupId>com.oracle</groupId>
-		  	<artifactId>ojdbc14</artifactId>
-		  	<version>10.2.0.4.0</version>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.4.0</version>
 		</dependency>
 		
 		<dependency>
@@ -45,10 +51,11 @@
 		</dependency>
 		
 		<dependency>
-  			<groupId>com.microsoft.sqlserver</groupId>
-  			<artifactId>sqljdbc4</artifactId>
-  			<version>4.0</version>
+		    <groupId>com.microsoft.sqlserver</groupId>
+		    <artifactId>sqljdbc4</artifactId>
+		    <version>4.0</version>
 		</dependency>
+
 		
 		<!-- JUnit Test -->
 		<dependency>

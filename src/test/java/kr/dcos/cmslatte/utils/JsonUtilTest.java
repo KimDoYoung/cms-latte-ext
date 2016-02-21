@@ -7,12 +7,11 @@ import kr.dcos.cmslatte.field.MatrixField;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 public class JsonUtilTest {
 	
-	private static Logger logger = LoggerFactory.getLogger(JsonUtilTest.class);
+//	private static Logger logger = LoggerFactory.getLogger(JsonUtilTest.class);
 	
 
 	@Before
@@ -32,14 +31,10 @@ public class JsonUtilTest {
 			mf.appendOrReplace(1, 0, "B");
 			mf.appendOrReplace(1, 1, "BBB");
 			String s = JsonUtil.tableToValueTextJsonArray(mf);
-			logger.debug(s);
 		} catch (CmsLatteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
-		
 	}
 
 }
